@@ -29,3 +29,5 @@ def rate_movie(num_ratings,movie_name):
     print(f"Média de avaliação do filme: {movie_name} é: {average:.2f}")
 
 rate_movie(2, "Sonic")
+
+#

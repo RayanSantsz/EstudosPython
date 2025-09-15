@@ -31,3 +31,5 @@ ratings = {
 # Função para calcular a média de avalianções de um filme
 average_rating = lambda movie_name: sum(ratings[movie_name]) / len(ratings[movie_name])
 print(f"Média de avaliações do filme Matrix: {average_rating('Matrix'):.2f}")
+
+#

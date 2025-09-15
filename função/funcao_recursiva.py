@@ -22,3 +22,5 @@ def total_sum(num):
         return num + total_sum(num - 1)
 num = int(input("Digite o número para soma: "))
 print(f"A soma total {num} é: {total_sum(num)}")
+
+#
