@@ -12,6 +12,13 @@ game1.multiplayer = False
 game1.note = 9.5
 
 # Segundo jogo
+game2 = Game()
+game2.name = 'Fortnite'
+game2.yearLauch = 2017
+game2.multiplayer = True
+game2.note = 8.0
 
 print("###Dados do Jogo###")
 print(f'Nome do jogo: {game1.name}\nAno de lançamento: {game1.yearLauch} ')
+print('=' * 30)
+print(f'Nome do jogo: {game2.name}\nAno de lançamento: {game2.yearLauch} ')
