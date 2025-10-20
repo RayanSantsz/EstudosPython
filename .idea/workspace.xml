@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df2ce1bc-6a2e-4e52-b533-33e543fad4b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/oo/6-metodo_classe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oo/7-heranca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
