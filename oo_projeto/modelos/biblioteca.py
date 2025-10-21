@@ -6,7 +6,7 @@ class Biblioteca:
         # nome da biblioteca
         self.nome = nome
         # por padrão, a biblioteca começa desativada
-        self.ativo = False
+        self._ativo = False
         # adiciona automaticamente a biblioteca criada na lista de todas as bibliotecas
         Biblioteca.bibliotecas.append(self)
 
@@ -20,15 +20,25 @@ class Biblioteca:
         for biblioteca in Biblioteca.bibliotecas:
             print(f"{biblioteca.nome} | {biblioteca.ativo}")
 
+    def alterna_estado(self):
+        self._ativo = not self._ativo
+
+    @property
+    def ativo(self):
+        return "ativada" if self._ativo else "desativada"
+
+
 
 # criando a primeira biblioteca e adicionando automaticamente à lista
-biblioteca_cidade = Biblioteca(nome="Biblioteca da Cidade")
+biblioteca_cidade = Biblioteca("Biblioteca da Cidade")
 # criando a segunda biblioteca e adicionando automaticamente à lista
-biblioteca_shopping = Biblioteca(nome="Biblioteca do Shopping")
+biblioteca_shopping = Biblioteca("Biblioteca do Shopping")
 
 # exibe apenas o nome da biblioteca, por causa do __str__
 print(biblioteca_shopping)
+biblioteca_shopping.alterna_estado()
 print(biblioteca_cidade)
+biblioteca_cidade.alterna_estado()
 
 # lista todas as bibliotecas criadas e seus estados (ativo ou não)
 Biblioteca.listar_bibliotecas()
