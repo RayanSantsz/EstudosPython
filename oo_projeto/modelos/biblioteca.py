@@ -15,10 +15,12 @@ class Biblioteca:
         # aqui retorna apenas o nome da biblioteca
         return self.nome
 
-    def listar_bibliotecas():
+    @classmethod
+    def listar_bibliotecas(cls):
+        print(f"{'Nome da biblioteca'.ljust(25)} | {'Status'}")
         # percorre todas as bibliotecas já criadas e exibe seus dados
         for biblioteca in Biblioteca.bibliotecas:
-            print(f"{biblioteca.nome} | {biblioteca.ativo}")
+            print(f"{biblioteca.nome.ljust(25)} | {biblioteca.ativo}")
 
     def alterna_estado(self):
         self._ativo = not self._ativo
