@@ -31,16 +31,3 @@ class Biblioteca:
 
 
 
-# criando a primeira biblioteca e adicionando automaticamente à lista
-biblioteca_cidade = Biblioteca("Biblioteca da Cidade")
-# criando a segunda biblioteca e adicionando automaticamente à lista
-biblioteca_shopping = Biblioteca("Biblioteca do Shopping")
-
-# exibe apenas o nome da biblioteca, por causa do __str__
-print(biblioteca_shopping)
-biblioteca_shopping.alterna_estado()
-print(biblioteca_cidade)
-biblioteca_cidade.alterna_estado()
-
-# lista todas as bibliotecas criadas e seus estados (ativo ou não)
-Biblioteca.listar_bibliotecas()
